@@ -14,4 +14,8 @@ bgImage.src = `img/${chosenImage}`;
 //<img src="img/0.jpg"/>
 //src -> path (address)
 
+//apply CSS styles to make the image smaller
+bgImage.style.width = "200px";
+bgImage.style.height = "200px";
+bgImage.style.marginBottom="10px";
 document.body.appendChild(bgImage);

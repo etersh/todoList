@@ -6,12 +6,12 @@ const quotes = [
 	},
 	{
 		quote:
-			"The greatest day in your life and mine is when we take total responsibility for our attitudes. That's the day we truly grow up.",
+			"The greatest day in your life and mine is\nwhen we take total responsibility for our attitudes.\nThat's the day we truly grow up.",
 		author: "John C. Maxwell",
 	},
 	{
 		quote:
-			"What we think determines what happens to us, so if we want to change our lives, we need to stretch our minds.",
+			"What we think determines what happens to us,\nso if we want to change our lives,\nwe need to stretch our minds.",
 		author: "Wayne Dyer",
 	},
 	{
@@ -21,7 +21,7 @@ const quotes = [
 	},
 	{
 		quote:
-			"Too often we underestimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around.",
+			"Too often we underestimate the power of a touch, a smile, a kind word,\na listening ear, an honest compliment, or the smallest act of caring,\nall of which have the potential to turn a life around.",
 		author: "Leo Buscaglia",
 	},
 	{
@@ -39,12 +39,12 @@ const quotes = [
 	},
 	{
 		quote:
-			"Our prime purpose in this life is to help others. And if you can't help them, at least don't hurt them.",
+			"Our prime purpose in this life is to help others.\n\nAnd if you can't help them, at least don't hurt them.",
 		author: "Dalai Lama",
 	},
 	{
 		quote:
-			"Life is a series of natural and spontaneous changes. Don't resist them--that only creates sorrow. Let reality be reality. Let things flow naturally forward in whatever way they like.",
+			"Life is a series of natural and spontaneous changes.\nDon't resist them--that only creates sorrow.\n\nLet reality be reality.\nLet things flow naturally forward in whatever way they like.",
 		author: "Lao Tzu",
 	},
 ];
@@ -55,4 +55,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `\n- ${todaysQuote.author} -\n`;
