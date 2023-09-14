@@ -3,29 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,200&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<title>Momentum App</title>
+		<title>todo-list</title>
 	</head>
 	<body>
 		<form id="login-form" class="hidden">
 			<input
+				class="name"
 				required
 				maxlength="15"
 				type="text"
 				placeholder="What is your name?"
 			/>
-			<input type="submit" value="Login" />
+			<input type="submit" class="button" value="Login" />
 		</form>
 		<h1 id="greeting" class="hidden"></h1>
 		<form id="todo-form">
-			<input required type="text" placeholder="Write a To Do and Press Enter" />
-			<input type="submit" value="Enter" />
+			<input class="todo" required type="text" required maxlength="28" placeholder="Write a To Do and Press Enter" />
+			<input type="submit" class="button" value="Enter" />
 		</form>
 		<ul id="todo-list"></ul>
 		<h2 id="clock">00:00:00</h2>
 		<div id="quote">
-			<span></span>
-			<span></span>
+			<span class="sonoFont"></span>
+			<span class="sonoFont"></span>
 		</div>
 		<div id="weather">
 			<span></span>
